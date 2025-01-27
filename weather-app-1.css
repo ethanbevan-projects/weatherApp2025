@@ -1,0 +1,372 @@
+* {
+
+    text-align: center;
+}
+
+body {
+
+    
+    color: white; 
+    font-family: 'RobotoCondensedBlack', sans-serif;
+    font-style: oblique;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+
+input, textarea {
+    color: rgb(56, 56, 56); 
+    font-family: 'RobotoCondensedBlack', sans-serif;
+    font-style: oblique;
+    font-size: 18px;
+    background: white;
+    border: #ffffff;
+
+}
+
+button {
+
+    font-family: 'RobotoCondensedBlack', sans-serif;
+    font-style: oblique;
+    padding: 20px 20px;
+    font-weight: 600;
+    background-color: white;
+    border: hsla(0, 0%, 100%, 1);
+    border-radius: 0px 22px 22px 0px !important;
+}
+
+input {
+  font-size: 14px;
+
+  font-family: 'RobotoCondensedBlack', sans-serif;
+  font-style: oblique;
+  font-weight: 600;
+  opacity: 100%;
+  border-radius: 22px 0px 0px 22px !important;
+}
+
+.randomButton {
+  border-radius: 22px 0px 0px 22px !important;
+}
+
+.shuffleButton {
+  border-radius: 0px 22px 22px 0px !important;
+}
+
+
+button:hover {
+
+    opacity: 95%;
+}
+
+.search {
+
+    display: inline-flex;
+}
+
+/* Search bar */
+#weatherSearch {
+    padding: 10px;
+    width: 100%;
+    }
+
+.MainWeatherAppBox {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 92vh;
+}
+
+.main-weather-app {
+
+    padding: 100px;
+    width: 375px;
+    background-image: linear-gradient(#57baff, #043e67);
+    border-radius: 10px;
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.weatherIcons {
+
+    height: 100px;
+    margin-top: 30px;
+
+
+}
+
+#weatherAppBoxes {
+    margin-top: 26px;
+
+}
+
+.row {
+
+    display: flex;
+}
+
+.column {
+    width: 33.3%;
+}
+
+
+
+h1, h2 {
+
+    padding: 0px;
+    margin: 0px;
+
+}
+
+.searchIcon {
+width: 100%;
+}
+
+
+.gradientBackgroundStart {
+  background: linear-gradient(300deg, #0058c5, #ffd16e, #00b7bd);
+    background-size: 200% 200%;
+    animation: gradient-animation 12s ease infinite;
+  }
+  
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  .gradientBackgroundSnow {
+    background: linear-gradient(300deg,#ffffff,#f7ffff,#dbdddd);
+  background-size: 200% 200%;
+  animation: gradient-animation 12s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+  .gradientBackgroundClouds {
+    background: linear-gradient(300deg,#f9ff41,#cad6d8);
+    background-size: 200% 200%;
+    animation: gradient-animation 8s ease infinite;
+  }
+  
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  .gradientBackgroundDrizzle {
+    background: linear-gradient(300deg,#b7c6ff,#9cb0ff,#708eff);
+  background-size: 200% 200%;
+  animation: gradient-animation 18s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+  .gradientBackgroundRain {
+    background: linear-gradient(300deg,#9cb0ff,#708eff,#0036ff);
+    background-size: 200% 200%;
+    animation: gradient-animation 18s ease infinite;
+  }
+  
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  .gradientBackgroundAtmosphere {
+    background: linear-gradient(300deg,#000e40,#b7b7b7);
+    background-size: 200% 200%;
+    animation: gradient-animation 12s ease infinite;
+  }
+  
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  .gradientBackgroundClear {
+    background: linear-gradient(300deg,#fffded,#ffd600);
+    background-size: 200% 200%;
+    animation: gradient-animation 12s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
+  .gradientBackgroundThunderstorm {
+    background: linear-gradient(300deg,blue,#000319,#000c67);
+  background-size: 200% 200%;
+  animation: gradient-animation 18s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.footer p {
+  color: #282828;
+  font-weight: 600;
+  opacity: 70%;
+  /* font-weight: 500; */
+  font-size: 14px;
+}
+
+
+
+
+.randomButton {
+  width: 100%;
+  height: 62px;
+  border: 2px solid white;
+  color: rgb(110, 110, 110);
+  font-family: 'RobotoCondensedBlack', sans-serif;
+  font-style: oblique;
+  font-weight: 600;
+
+}
+
+.shuffleIcon {
+
+  width: auto; 
+  height: 16px;
+}
+
+.shuffleBox {
+  margin-top: 28px;
+display: inline-flex;
+}
+
+.shuffleButton {
+  border: 1px solid white;
+}
+
+.searchIcon {
+  width: 22px;
+}
+
+
+
+
+
+@media screen and (max-width: 720px) {
+  
+  
+  
+  .main-weather-app {
+      width: 100%;
+      padding: 48px;
+      height: 100%;
+      margin: 20px;
+      padding-bottom: 80px;
+  }
+
+  .MainWeatherAppBox {
+      height: 100%;
+      margin: 20px 8px;
+
+  }
+
+  .footer {
+
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding: 10px 0px;
+  }
+
+  .searchIcon {
+      width: 20px;
+  }
+
+  .weatherIcons {
+   
+      margin-top: 20px;
+      margin-bottom: 10px;
+  }
+
+}
+
+
+.cityTemp, .cityFeelsLike, .cityType, .cityMax  {
+
+  color: #053864;
+  font-weight: 600;
+}
+
+#weatherAppBoxes p {
+  font-weight: 600;
+}
+
+#weatherAppBoxes .row {
+
+  margin-bottom: 5px;
+}
