@@ -1,11 +1,18 @@
 * {
+  animation: fadeIn 1s ease-in-out;
+  text-align: center;
+}
 
-    text-align: center;
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 body {
-
-    
     color: white; 
     font-family: 'RobotoCondensedBlack', sans-serif;
     font-style: oblique;
@@ -15,7 +22,7 @@ body {
 }
 
 input, textarea {
-    color: rgb(56, 56, 56); 
+    color: rgb(85, 85, 85); 
     font-family: 'RobotoCondensedBlack', sans-serif;
     font-style: oblique;
     font-size: 18px;
@@ -80,11 +87,13 @@ button:hover {
 
 .main-weather-app {
 
-    padding: 100px;
-    width: 375px;
+  padding: 50px 60px 30px 60px;
+    width: 100%;
+    max-width: 375px;
     background-image: linear-gradient(#57baff, #043e67);
     border-radius: 10px;
-    height: 650px;
+    height: 100%;
+    max-height: 650px;
     display: flex;
     flex-direction: column;
 }
@@ -99,7 +108,7 @@ button:hover {
 }
 
 #weatherAppBoxes {
-    margin-top: 26px;
+    margin-top: 22px;
 
 }
 
@@ -300,7 +309,7 @@ width: 100%;
 }
 
 .shuffleBox {
-  margin-top: 28px;
+  margin-top: 20px;
 display: inline-flex;
 }
 
@@ -314,6 +323,12 @@ display: inline-flex;
 
 
 
+.checkRandomCity {
+
+  margin-top: 30px !important;
+}
+
+
 
 
 @media screen and (max-width: 720px) {
@@ -321,12 +336,13 @@ display: inline-flex;
   
   
   .main-weather-app {
-      width: 100%;
-      padding: 48px;
-      height: 100%;
-      margin: 20px;
-      padding-bottom: 80px;
-  }
+    width: 100%;
+    padding: 44px;
+    height: 100%;
+    margin: 20px;
+    padding-bottom: 64px;
+}
+  
 
   .MainWeatherAppBox {
       height: 100%;
@@ -353,6 +369,10 @@ display: inline-flex;
       margin-bottom: 10px;
   }
 
+  .cityTemp {
+    margin-top: 32px !important;
+  }
+
 }
 
 
@@ -361,6 +381,7 @@ display: inline-flex;
   color: #053864;
   font-weight: 600;
 }
+
 
 #weatherAppBoxes p {
   font-weight: 600;

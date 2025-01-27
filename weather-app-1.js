@@ -19,7 +19,7 @@ async function checkWeather(city) {
    
    if (response.status == 404 || !city ) {
 
-    document.querySelector(".cityName").innerHTML = "Spelling error or Country name";
+    document.querySelector(".cityName").innerHTML = "Spelling error";
     document.querySelector(".errorMessage").style.display = "block";
     document.querySelector(".cityTemp").innerHTML = "";
     document.querySelector(".errorMessage").innerHTML = "Try again with correct city name";
