@@ -3,6 +3,11 @@
   text-align: center;
 }
 
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -284,9 +289,14 @@ width: 100%;
   color: #282828;
   font-weight: 600;
   opacity: 70%;
-  /* font-weight: 500; */
   font-size: 14px;
+
+  bottom: 0;
+  width: 100%;
 }
+
+
+
 
 
 
@@ -351,13 +361,15 @@ display: inline-flex;
   }
 
   .footer {
-
-  position: fixed;
+    position: relative;
   bottom: 0;
   width: 100%;
   text-align: center;
-  padding: 10px 0px;
+  padding: 0px 0px 20px 0px;
+
   }
+
+  .footer p {margin-bottom: 10px;}
 
   .searchIcon {
       width: 20px;
@@ -373,7 +385,14 @@ display: inline-flex;
     margin-top: 32px !important;
   }
 
+  .errorMessage {
+font-size: 14px;
+  }
+
 }
+
+
+
 
 
 .cityTemp, .cityFeelsLike, .cityType, .cityMax  {
@@ -390,4 +409,83 @@ display: inline-flex;
 #weatherAppBoxes .row {
 
   margin-bottom: 5px;
+}
+
+@media screen and (max-width: 600px) {
+
+  .footer {
+    position: fixed;
+  }
+
+}
+
+/* Surface duo only */
+@media screen and (width: 540px) and (height: 720px) {
+  .footer {
+    position: relative;
+    padding: 0 0 15px 0;
+  }
+}
+
+
+@media screen and (max-width: 376px) {
+
+  .MainWeatherAppBox {
+    height: 100%;
+    margin: 30px 8px 20px 8px;
+}
+
+  .main-weather-app {
+  
+  width: 100%;
+  padding: 44px;
+  height: 72vh;
+  margin: 0px 20px 0px 20px;
+  padding-bottom: 64px;
+  }
+
+  .search {
+margin-top: 18px !important;
+  }
+
+  #weatherAppBoxes {
+    margin-top: 2px;
+}
+
+.checkRandomCity {
+  margin-top: 10px !important;
+}
+
+.shuffleBox {
+  margin-top: 0px !important;
+}
+
+.cityTemp {
+  margin-top: 10px !important;
+}
+
+.footer p {
+
+padding: 0px !important;
+margin-bottom: 10px !important;
+font-size: 10px;
+margin: 0px;
+}
+
+.footer {
+  position: relative;
+  padding: 2px 0px 0px 0px;
+  
+}
+
+
+}
+
+@media screen and (max-width: 361px) {
+
+  
+  #weatherAppBoxes {
+    margin-top: 16px;
+}
+
 }
